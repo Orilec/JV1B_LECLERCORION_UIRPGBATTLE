@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+    .interface{
+        display:flex;
+        background-image: url('battleback5.png');
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .haut{
+        display: flex;
+        justify-content: center;
+    }
+    #dialogue{
+        color: white;
+        background-color: black;
+        display: block;
+        height: 30px;
+        width: 400px;
+        border: 5px solid grey;
+        border-radius: 4px;
+        padding: 10px;
+    }
+    .milieu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .monstres{
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+    }
+    .heros{
+        transform: scaleX(-1)
+
+    }
+    .bas{
+        display: flex;
+        justify-content: center;
+    }
+    #info_joueurs{
+        display: flex;
+        height:auto;
+        width: 300px;
+        border: 5px solid grey;
+        background-color: black;
+        color: white;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    #info_joueur1{
+        display: flex;
+        border: 2px solid grey;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+
+    #info_joueur2{
+        display: flex;
+        border: 2px solid grey;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+
+    #info_joueur3{
+        display: flex;
+        border: 2px solid grey;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+
+    #info_joueur4{
+        display: flex;
+        border: 2px solid grey;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    #action{
+        display: flex;
+        border: 5px solid grey;
+        background-color: black;
+        color:white;
+        flex-direction: column;
+        justify-self: flex-end;
+        padding:5px;
+    }
+    span:hover{
+        color: gray;
+
+    }
+
+    #monstre2{
+        align-self: flex-end;
+    }
+</style>
+</head>
+
+<body>
+<div class= "interface">
+        <div class="haut">
+            <div id= "dialogue">
+                "Ceci est un dialogue"
+            </div>
+
+    </div>
+    <div class="milieu">
+        <div class="monstres">
+            <div id="monstre1">
+                <img src= "monster.png">
+            </div>
+            <div id="monstre2">
+                <img src= "monster.png">
+            </div>
+            <div id="monstre3">
+                <img src= "monster.png">
+            </div>
+
+
+        </div>
+        <div class="heros">
+
+            <div id="hero1">
+                <img src= "hero1.gif">
+            </div>
+
+            <div id="hero2">
+                <img src= "hero2.gif">
+            </div>
+
+            <div id="hero3">
+                <img src= "hero3.gif">
+            </div>
+
+            <div id="hero4">
+                <img src= "hero4.gif">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bas">
+
+        <div id= "info_joueurs">
+            <div id="info_joueur1"> 
+                <div id="nom_joueur1">Jeanne</div> <div id="pv_joueur1"> 45pv </div> <div id="mana_joueur1"> 25 mana </div>
+            </div>
+            <div id="info_joueur2">
+                <div id="nom_joueur2">Harry</div><div id="pv_joueur2"> 96pv </div> <div id="mana_joueur2"> 58 mana </div>
+            </div>
+            <div id="info_joueur3">
+                <div id="nom_joueur3">Conan</div><div id="pv_joueur3"> 12pv </div> <div id="mana_joueur3"> 36 mana </div>
+            </div>
+            <div id="info_joueur4">
+                <div id="nom_joueur4">Michel</div> <div id="pv_joueur4"> 14pv </div> <div id="mana_joueur4"> 5 mana </div>
+            </div>
+        </div>
+        
+        <div id= "action">
+            <span id="attaque"> Attaque</span>
+            <span id="defense"> Défense</span>
+            <span id="magie"> Magie</span>
+            <span id="item"> Item</span>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
